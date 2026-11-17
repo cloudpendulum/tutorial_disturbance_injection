@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 import matplotlib.animation as mplanimation
-import zerorpc
 import wget
 import subprocess
 import os
@@ -10,8 +9,8 @@ import ast
 import time
 import traceback
 try:
-    from cloudpendulumclient.client import Client
-    import cloudpendulumclient.data as Data
+    from pycloudpendulum import Client
+    import pycloudpendulum as Data
 except:
     print("Warning: Did not find the CloudPendulum Client. Please run on the CloudPendulum to run on the real hardware.")
 
